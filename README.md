@@ -3,35 +3,19 @@
 #### 项目介绍
 中华人民共和国行政区划数据：省份、城市、区县。
 
-#### 软件架构
-软件架构说明
+#### 数据来源
 
+1. 国内省市区数据来源于中华人民共和国民政部公布的行政规划代码。
+2. 香港、澳门和台湾相关数据来源于百度百科。
 
-#### 安装教程
+#### 数据格式
 
-1. xxxx
-2. xxxx
-3. xxxx
+1. SQL文件（MySQL）
+2. JSON数据
+3. Excel文档（包括xls和xlsx两种格式）
 
-#### 使用说明
+#### 注意事项
 
-1. xxxx
-2. xxxx
-3. xxxx
-
-#### 参与贡献
-
-1. Fork 本项目
-2. 新建 Feat_xxx 分支
-3. 提交代码
-4. 新建 Pull Request
-
-
-#### 码云特技
-
-1. 使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
-2. 码云官方博客 [blog.gitee.com](https://blog.gitee.com)
-3. 你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解码云上的优秀开源项目
-4. [GVP](https://gitee.com/gvp) 全称是码云最有价值开源项目，是码云综合评定出的优秀开源项目
-5. 码云官方提供的使用手册 [http://git.mydoc.io/](http://git.mydoc.io/)
-6. 码云封面人物是一档用来展示码云会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
+1. ID和父级ID默认均为行政区划代码。
+2. 直辖市二级分类都是作者根据编码规则自行生成（官方没有提供）。
+3、香港、澳门和台湾的二级和三级数据均由作者自行整理（非官方数据），。
