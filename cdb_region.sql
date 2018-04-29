@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50718
 File Encoding         : 65001
 
-Date: 2018-04-29 12:50:30
+Date: 2018-04-29 14:30:04
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -20,12 +20,13 @@ SET FOREIGN_KEY_CHECKS=0;
 -- ----------------------------
 DROP TABLE IF EXISTS `cdb_region`;
 CREATE TABLE `cdb_region` (
-  `id` varchar(6) NOT NULL DEFAULT '' COMMENT '地区ID',
+  `id` char(6) NOT NULL DEFAULT '' COMMENT '地区ID',
   `name` varchar(50) NOT NULL DEFAULT '' COMMENT '地区名称',
-  `parent_id` varchar(6) NOT NULL DEFAULT '' COMMENT '父级ID',
+  `parent_id` char(6) NOT NULL DEFAULT '' COMMENT '父级ID',
   `level` tinyint(1) unsigned NOT NULL DEFAULT '0' COMMENT '层级',
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='地区信息';
+  PRIMARY KEY (`id`),
+  KEY `parent_id` (`parent_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='省市区';
 
 -- ----------------------------
 -- Records of cdb_region
