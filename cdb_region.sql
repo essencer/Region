@@ -4,13 +4,13 @@ Navicat MySQL Data Transfer
 Source Server         : 192.168.1.10
 Source Server Version : 50718
 Source Host           : 192.168.1.10:3306
-Source Database       : qinziyun
+Source Database       : region
 
 Target Server Type    : MYSQL
 Target Server Version : 50718
 File Encoding         : 65001
 
-Date: 2018-04-29 01:19:02
+Date: 2018-04-29 12:50:30
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -3263,11 +3263,11 @@ INSERT INTO `cdb_region` VALUES ('710103', '桃园市', '710100', '3');
 INSERT INTO `cdb_region` VALUES ('710104', '台中市', '710100', '3');
 INSERT INTO `cdb_region` VALUES ('710105', '台南市', '710100', '3');
 INSERT INTO `cdb_region` VALUES ('710106', '高雄市', '710100', '3');
-INSERT INTO `cdb_region` VALUES ('710200', '市辖区', '710000', '2');
+INSERT INTO `cdb_region` VALUES ('710200', '市', '710000', '2');
 INSERT INTO `cdb_region` VALUES ('710201', '基隆市', '710200', '3');
 INSERT INTO `cdb_region` VALUES ('710202', '新竹市', '710200', '3');
 INSERT INTO `cdb_region` VALUES ('710203', '嘉义市', '710200', '3');
-INSERT INTO `cdb_region` VALUES ('710300', '县级市', '710000', '2');
+INSERT INTO `cdb_region` VALUES ('710300', '县', '710000', '2');
 INSERT INTO `cdb_region` VALUES ('710301', '新竹县', '710300', '3');
 INSERT INTO `cdb_region` VALUES ('710302', '苗栗县', '710300', '3');
 INSERT INTO `cdb_region` VALUES ('710303', '彰化县', '710300', '3');
